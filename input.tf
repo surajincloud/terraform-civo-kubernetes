@@ -1,6 +1,3 @@
-variable "civo_token" {}
-
-
 variable "name" {
     type = string
     description = "name of the kubernetes cluster"
@@ -9,7 +6,7 @@ variable "name" {
 variable "node_count" {
   type = number
   description = "number of target nodes"
-  default = 2
+  default = 3
 }
 
 variable "node_size" {
@@ -27,19 +24,12 @@ variable "k8s_version" {
 
 variable "network_name" {
     type = string
-    description = "(optional) describe your variable"
+    description = "name of the existing network"
     default = ""
 }
 
-
-variable "applications" {
+variable "firewall_name" {
     type = string
-    description = "(optional) describe your variable"
+    description = "name of the existing firewall"
     default = ""
-}
-
-variable "tags" {
-    type = list(string)
-    description = "(optional) describe your variable"
-    default = []
 }

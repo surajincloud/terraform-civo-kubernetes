@@ -19,5 +19,9 @@ output "installed_applications" {
 }
 
 output "firewall_id" {
-    value = civo_firewall.firewall.id
+    value = local.firewall_id
+}
+
+output "network_id" {
+    value = local.network_id
 }
