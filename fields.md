@@ -40,10 +40,9 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_api_endpoint"></a> [api\_endpoint](#output\_api\_endpoint) | n/a |
-| <a name="output_cluster_id"></a> [cluster\_id](#output\_cluster\_id) | n/a |
-| <a name="output_firewall_id"></a> [firewall\_id](#output\_firewall\_id) | n/a |
-| <a name="output_installed_applications"></a> [installed\_applications](#output\_installed\_applications) | n/a |
-| <a name="output_kubeconfig"></a> [kubeconfig](#output\_kubeconfig) | n/a |
-| <a name="output_master_ip"></a> [master\_ip](#output\_master\_ip) | n/a |
-| <a name="output_network_id"></a> [network\_id](#output\_network\_id) | n/a |
+| <a name="output_api_endpoint"></a> [api\_endpoint](#output\_api\_endpoint) | The API server endpoint of the cluster |
+| <a name="output_cluster_id"></a> [cluster\_id](#output\_cluster\_id) | The ID of the cluster |
+| <a name="output_firewall_id"></a> [firewall\_id](#output\_firewall\_id) | The firewall ID to use for this cluster |
+| <a name="output_kubeconfig"></a> [kubeconfig](#output\_kubeconfig) | The kubeconfig of the cluster |
+| <a name="output_master_ip"></a> [master\_ip](#output\_master\_ip) | The IP address of the master node |
+| <a name="output_network_id"></a> [network\_id](#output\_network\_id) | The network ID to use for this cluster |
