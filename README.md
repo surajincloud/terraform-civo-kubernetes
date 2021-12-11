@@ -15,9 +15,13 @@ module "civo-cluster-1" {
 }
 ```
 
-### Field References
+## Field References
 
 Checkout [fields.md](./fields.md)
+
+## Examples
+
+[examples](./examples) has various examples which covers most of the scenarios.
 
 ## Contributing
 

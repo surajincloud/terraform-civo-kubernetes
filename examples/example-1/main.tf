@@ -22,12 +22,7 @@ locals {
 }
 
 module "civo-cluster-1" {
-    source = "./.."
+    source = "./../.."
     cluster_name = "surajincloud-k8s"
-
-    #advanced
-    network_name = "surajincloud" # if you already have the network
-    firewall_name = "surajincloud"
-
 }
 

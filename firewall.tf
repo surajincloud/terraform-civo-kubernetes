@@ -1,6 +1,6 @@
 resource "civo_firewall" "firewall" {
   count      = var.firewall_name != "" ? 0 : 1
-  name       = var.name
+  name       = "${var.cluster_name}-firewall"
   network_id = local.network_id
 }
 
