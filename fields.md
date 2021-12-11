@@ -34,7 +34,7 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | name of the kubernetes cluster | `string` | n/a | yes |
 | <a name="input_network_name"></a> [network\_name](#input\_network\_name) | name of the existing network | `string` | `""` | no |
 | <a name="input_node_count"></a> [node\_count](#input\_node\_count) | number of target nodes | `number` | `3` | no |
-| <a name="input_node_size"></a> [node\_size](#input\_node\_size) | instance type of the target nodes | `string` | `""` | no |
+| <a name="input_node_size"></a> [node\_size](#input\_node\_size) | instance type of the target nodes, choose from `g3.k3s.xsmall`, `g3.k3s.small`, `g3.k3s.medium`, `g3.k3s.large`, `g3.k3s.xlarge`, `g3.k3s.2xlarge` | `string` | `"g3.k3s.medium"` | no |
 
 ## Outputs
 

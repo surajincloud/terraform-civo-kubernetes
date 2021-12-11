@@ -11,8 +11,8 @@ variable "node_count" {
 
 variable "node_size" {
     type = string
-    description = "instance type of the target nodes"
-    default = ""
+    description = "instance type of the target nodes, choose from `g3.k3s.xsmall`, `g3.k3s.small`, `g3.k3s.medium`, `g3.k3s.large`, `g3.k3s.xlarge`, `g3.k3s.2xlarge`"
+    default = "g3.k3s.medium"
   
 }
 # https://github.com/k3s-io/k3s/releases
