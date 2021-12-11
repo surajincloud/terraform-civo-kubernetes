@@ -25,4 +25,3 @@ module "civo-cluster-1" {
     source = "./../.."
     cluster_name = "surajincloud-k8s"
 }
-
