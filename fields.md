@@ -29,7 +29,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | name of the kubernetes cluster | `string` | `"value"` | no |
+| <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | name of the kubernetes cluster | `string` | n/a | yes |
 | <a name="input_firewall_name"></a> [firewall\_name](#input\_firewall\_name) | name of the existing firewall | `string` | `""` | no |
 | <a name="input_k3s_version"></a> [k3s\_version](#input\_k3s\_version) | supported version of the k3s cluster | `string` | `""` | no |
 | <a name="input_network_name"></a> [network\_name](#input\_network\_name) | name of the existing network | `string` | `""` | no |
