@@ -1,4 +1,4 @@
-# terraform-civo-kubernets
+# terraform-civo-kubernetes
 
 Terraform module for Civo Cloud Kubernetes
 
