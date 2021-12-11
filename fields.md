@@ -29,9 +29,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | name of the kubernetes cluster | `string` | `"value"` | no |
 | <a name="input_firewall_name"></a> [firewall\_name](#input\_firewall\_name) | name of the existing firewall | `string` | `""` | no |
-| <a name="input_k8s_version"></a> [k8s\_version](#input\_k8s\_version) | supported version of the kubernetes cluster | `string` | `""` | no |
-| <a name="input_name"></a> [name](#input\_name) | name of the kubernetes cluster | `string` | n/a | yes |
+| <a name="input_k3s_version"></a> [k3s\_version](#input\_k3s\_version) | supported version of the k3s cluster | `string` | `""` | no |
 | <a name="input_network_name"></a> [network\_name](#input\_network\_name) | name of the existing network | `string` | `""` | no |
 | <a name="input_node_count"></a> [node\_count](#input\_node\_count) | number of target nodes | `number` | `3` | no |
 | <a name="input_node_size"></a> [node\_size](#input\_node\_size) | instance type of the target nodes, choose from `g3.k3s.xsmall`, `g3.k3s.small`, `g3.k3s.medium`, `g3.k3s.large`, `g3.k3s.xlarge`, `g3.k3s.2xlarge` | `string` | `"g3.k3s.medium"` | no |

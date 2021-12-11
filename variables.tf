@@ -1,6 +1,7 @@
-variable "name" {
+variable "cluster_name" {
     type = string
     description = "name of the kubernetes cluster"
+    default = "value"
 }
 
 variable "node_count" {
@@ -16,9 +17,9 @@ variable "node_size" {
   
 }
 # https://github.com/k3s-io/k3s/releases
-variable "k8s_version" {
+variable "k3s_version" {
     type = string
-    description = "supported version of the kubernetes cluster"
+    description = "supported version of the k3s cluster"
     default = ""
 }
 
