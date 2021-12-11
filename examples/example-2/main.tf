@@ -3,7 +3,7 @@ terraform {
   required_providers {
     civo = {
       source = "civo/civo"
-      version = ">= 1.0.6"
+      version = ">= 1.0.7"
     }
   }
 }
@@ -25,9 +25,8 @@ module "civo-cluster-1" {
     source = "./../.."
     cluster_name = "surajincloud-k8s"
 
-    #advanced
     network_name = "surajincloud" # if you already have the network
-    firewall_name = "surajincloud"
+    firewall_name = "surajincloud" #if you already gh
 
 }
 

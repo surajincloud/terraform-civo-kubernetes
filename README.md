@@ -1,17 +1,13 @@
 # terraform-civo-kubernetes
 
-Terraform module for Civo Cloud Kubernetes
+Terraform module for [Civo Cloud Kubernetes](https://www.civo.com/)
 
 ## Usage
 
 ```
 module "civo-cluster-1" {
-    source = "./.."
+    source = "surajincloud/terraform-civo-kubernetes/civo"
     cluster_name = "surajincloud-k8s"
-
-    network_name = "surajincloud"
-    firewall_name = "surajincloud"
-
 }
 ```
 
@@ -27,13 +23,13 @@ module "civo-cluster-1" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_civo"></a> [civo](#requirement\_civo) | >= 1.0.6 |
+| <a name="requirement_civo"></a> [civo](#requirement\_civo) | >= 1.0.7 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_civo"></a> [civo](#provider\_civo) | >= 1.0.6 |
+| <a name="provider_civo"></a> [civo](#provider\_civo) | >= 1.0.7 |
 
 ## Modules
 
