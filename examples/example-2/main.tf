@@ -1,4 +1,3 @@
-# Specify required provider as maintained by civo
 terraform {
   required_providers {
     civo = {
@@ -8,7 +7,8 @@ terraform {
   }
 }
 
-# Set the variable value in *.tfvars file or using -var="civo_token=..." CLI flag
+# Set the variable value in *.tfvars file or using -var="civo_token=..." CLI flag 
+# or set TF_VAR_civo_token environment variable
 variable "civo_token" {}
 
 # Configure the Civo Provider
@@ -21,12 +21,12 @@ locals {
   region = "LON1"
 }
 
-module "civo-cluster-1" {
+module "civo-cluster-2" {
     source = "./../.."
     cluster_name = "surajincloud-k8s"
 
     network_name = "surajincloud" # if you already have the network
-    firewall_name = "surajincloud" #if you already gh
+    firewall_name = "surajincloud" #if you already have the firewall
 
 }
 

@@ -1,4 +1,3 @@
-# Specify required provider as maintained by civo
 terraform {
   required_providers {
     civo = {
@@ -8,10 +7,10 @@ terraform {
   }
 }
 
-# Set the variable value in *.tfvars file or using -var="civo_token=..." CLI flag
+# Set the variable value in *.tfvars file or using -var="civo_token=..." CLI flag 
+# or set TF_VAR_civo_token environment variable
 variable "civo_token" {}
 
-# Configure the Civo Provider
 provider "civo" {
   token = var.civo_token
   region = local.region

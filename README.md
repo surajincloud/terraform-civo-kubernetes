@@ -5,8 +5,25 @@ Terraform module for [Civo Cloud Kubernetes](https://www.civo.com/)
 ## Usage
 
 ```
+terraform {
+  required_version = ">= 0.13"
+  required_providers {
+    civo = {
+      source = "civo/civo"
+      version = ">= 1.0.7"
+    }
+  }
+}
+
+variable "civo_token" {}
+
+provider "civo" {
+  token = var.civo_token
+  region = "LON1"
+}
+
 module "civo-cluster-1" {
-    source = "surajincloud/terraform-civo-kubernetes/civo"
+    source = "surajincloud/kubernetes/civo"
     cluster_name = "surajincloud-k8s"
 }
 ```
@@ -17,9 +34,11 @@ module "civo-cluster-1" {
 
 ## Contributing
 
-* Feel free to contribute via issues, PR :)  
+Feel free to contribute via issues, PR 😊 
 
 ## Requirements
+
+Following information is generated with the help of [terraform-docs](https://github.com/terraform-docs/terraform-docs).
 
 | Name | Version |
 |------|---------|
