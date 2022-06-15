@@ -33,3 +33,24 @@ variable "firewall_name" {
     description = "name of the existing firewall"
     default = ""
 }
+
+variable "cni" {
+    type = string
+    description = "CNI Plugin, available options: flannel, cilium"
+    default = "cilium"
+}
+
+variable "tags" {
+    type = string
+    description = "Space separated list of tags"
+}
+
+variable "region" {
+    type = string
+    description = "Region for the Cluster"
+}
+
+variable "node_label" {
+    type = string
+    description = "(optional) describe your variable"
+}
